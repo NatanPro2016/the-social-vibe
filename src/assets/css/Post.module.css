@@ -1,0 +1,133 @@
+.post {
+  width: 385px;
+  height: 528px;
+  border-radius: 5px;
+  background: var(--light);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.link {
+  color: var(--forgrond);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+.bold {
+  font-size: 16;
+  font-family: kanit-medium;
+}
+.userImg {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.gotouser {
+  width: 50px;
+  display: flex;
+  justify-content: end;
+}
+
+.post_img {
+  width: 386px;
+  height: 335px;
+  border-radius: 5px;
+  object-fit: cover;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  align-self: center;
+}
+.category {
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  color: var(--white);
+  width: fit-content;
+}
+.post_big {
+  width: 400px;
+  height: fit-content;
+  border-radius: 20px;
+  background: var(--light);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  margin: 20px auto;
+}
+.goback {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--black);
+}
+.flex {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.notfound {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+@media (max-width: 860px) {
+  .post_big {
+    padding: 10px;
+  }
+}
+@media (max-width: 460px) {
+  .post,
+  .post_big {
+    width: 80svw;
+
+    padding: 5px 10px;
+  }
+
+  .post_img {
+    width: 100%;
+    height: 80%;
+  }
+  .userImg {
+    width: 40px;
+    height: 40px;
+  }
+  .save {
+    width: 30%;
+  }
+  .category {
+    padding: 10px 10px;
+  }
+  .flex svg {
+    width: 20px;
+  }
+  .notfound {
+    width: 80svw;
+  }
+  .notfound svg {
+    width: 40vw;
+    height: 40vw;
+  }
+}
